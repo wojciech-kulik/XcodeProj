@@ -239,9 +239,7 @@ public extension PBXGroup {
         }
         let fileReference = PBXFileReference(
             sourceTree: sourceTree,
-            name: filePath.lastComponent,
             explicitFileType: filePath.extension.flatMap(Xcode.filetype),
-            lastKnownFileType: filePath.extension.flatMap(Xcode.filetype),
             path: path
         )
         projectObjects.add(object: fileReference)
